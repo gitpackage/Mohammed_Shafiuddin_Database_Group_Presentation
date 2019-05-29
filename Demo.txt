@@ -1,0 +1,45 @@
+use college // This will switch to database to college database
+
+// show databases  // The database college does not exist becuase it has not implemented yet.
+
+//Creates student collection and document containing name, age, address, and cours.  
+/*
+db.student.insert( { "_id": 1,
+                    name: 'Ali' , age: '25',
+					address:
+						{
+							city: 'Chicago'
+						} ,
+					course: [
+							 { course_name: 'database' } ,
+							 { section: 480 }
+							 ]
+					})
+db.student.find() // Shows the collection
+
+/* show databases */ // Now database college exist and will be shown after creating the collection
+
+
+// db.student.find() // Shows the collection
+
+
+// db.student.insert({"_id": 2, name: 'John'}) /* Adding document with id */
+
+// db.student.find() /* Shows the collection */
+
+//db.student.insert({name: 'John'}) /* adding document with no Id */
+//db.student.find({name: 'John'})
+
+//db.student.deleteOne({"_id":{$ne : 2} , name: 'John'}) /* Deleting document with default Id */
+
+//db.student.find() /* SQl equivalent is SELECT * FROM student */ 
+
+// db.student.deleteOne({"_id":{$ne : 2} , name: 'John'}) // Deleting document with default Id
+
+// db.student.find()  /* SQl equivalent is SELECT * FROM student */ 
+
+//db.student.find({age: '25'}) /* This is like a SELECT statement in SQL with WHERE clause"*/
+//db.student
+// db.student.update({"_id": 1} , {$set: {"age": 64}}) /* update the selected item */
+
+//db.dropDatabase() //Drop the database
